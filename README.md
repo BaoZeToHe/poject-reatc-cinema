@@ -1,1 +1,1 @@
-# poject-react-cinema
+# project-react-cinema
