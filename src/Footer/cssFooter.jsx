@@ -1,8 +1,10 @@
 import styled from "styled-components";
+
 export const DivFooter = styled.div`
   background-color: #001232;
   position: relative;
-  top : -120px;
+  color: #dbe2fb;
+  padding: 20px;
   &::before {
     content: "";
     width: 100%;
@@ -28,6 +30,7 @@ export const DivInputFooter = styled.div`
   position: relative;
   padding: 60px 20px;
   text-align: center;
+  margin-bottom: 80px;
   &:after {
     background-image: -webkit-linear-gradient(0deg, #7400ba 0%, #0f5ae0 100%);
     content: "";
@@ -73,4 +76,76 @@ export const DivInput = styled.input`
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
   display: inline-block;
   background: transparent;
+`;
+export const DivInformationFooter = styled.div`
+  max-width: 1120px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+  @media (max-width: 400px) {
+    & {
+      flex-wrap: wrap;
+    }
+    div {
+      width: 100%;
+    }
+    ul {
+      width: 100%;
+      margin-top: 20px;
+      justify-content: flex-start;
+    }
+  }
+`;
+export const CssA = styled.a`
+  display: inline-block;
+  transition: all ease 0.3s;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 14px;
+  &:hover {
+    border: 1px solid #001232;
+    background-image: -webkit-linear-gradient(
+      169deg,
+      #5560ff 17%,
+      #aa52a1 63%,
+      #ff4343 100%
+    );
+  }
+`;
+export const DivInforMationBottom = styled.div`
+  padding: 25px 0;
+  max-width: 1120px;
+  margin: auto;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  li{
+    text-align: center;
+  }
+  @media (max-width: 400px) {
+    & {
+      flex-wrap: wrap;
+    }
+    div {
+      width: 100%;
+    }
+    ul {
+      width: 100%;
+      margin-top: 20px;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li{
+        width: 30%;
+        text-align: center;
+      }
+    }
+  }
 `;

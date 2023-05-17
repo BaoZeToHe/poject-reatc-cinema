@@ -3,8 +3,7 @@ import ImgIcon2 from "./imgSiders/sidebar02.png"
 import ImgIcon3 from "./imgSiders/sidebar03.png"
 import Imgadvertisement1 from "./imgSiders/banner01.jpg"
 import Imgadvertisement2 from "./imgSiders/banner02.jpg"
-
-import { CssDivSiler, CssLiSiler, CssSpanIcon, CssSpanContent } from "../CsscontentHomePage"
+import { CssDivSiler, CssLiSiler, CssSpanIcon, CssSpanContent } from "../../CsscontentHomePage"
 function ContentSide() {
   return (
     <div>

@@ -1,37 +1,20 @@
-import { CSSInputSearch } from "../../CsscontentHomePage";
+import { DivMainInput, DivInput,  InputSearch, DivImgInputSearch, InputSearchContentHomePage, SelectInput } from "../cssSearchHeader";
 import { SearchOutlined } from "@ant-design/icons";
 import Icon1 from "./iconinputseach/cinema.png";
 import Icon2 from "./iconinputseach/city.png";
 import Icon3 from "./iconinputseach/date.png"
-function InputSearch() {
-  const cssInput = {
-    background: "transparent",
-    border: "none",
-    borderBottom: "1px solid #9eb1eb",
-    borderRadius: 0,
-    padding: 0,
-    height: "45px",
-    paddingRight: "50px",
-  }
-  const cssImg = {
-    width: "40px",
-    height: "40px",
-    borderRadius: "50%",
-    overflow: "hidden",
-    marginRight: "10px",
-    boxShadow: "5px 0 15px rgba(0, 0, 0, 0.5)"
-  }
+function PageInputSearch() {
   return (
-    <CSSInputSearch>
-      <div className="flex justify-between">
-        <div className="relative w-2/12 ">
-          <input placeholder="Search for Movie" style={cssInput} />
+    <InputSearch>
+      <DivMainInput>
+        <DivInput >
+          <InputSearchContentHomePage placeholder="Search for Movie" />
           <a className="text-white absolute top-2.5 right-2"><SearchOutlined /></a>
-        </div>
-        <div className="w-3/12 flex justify-center flex-wrap	items-center gap-3">
-          <div style={cssImg}>
+        </DivInput>
+        <SelectInput>
+          <DivImgInputSearch>
             <img src={Icon1} className="w-full h-full" />
-          </div>
+          </DivImgInputSearch>
           <span className="text-green">City</span>
           <select className="bg-transparent text-white">
             <option className="text-black">London</option>
@@ -42,11 +25,11 @@ function InputSearch() {
             <option className="text-black">Rome</option>
             <option className="text-black">Khoksa</option>
           </select>
-        </div>
-        <div className="w-3/12 flex justify-center flex-wrap	items-center gap-3">
-          <div style={cssImg}>
+        </SelectInput>
+        <SelectInput>
+          <DivImgInputSearch >
             <img src={Icon2} />
-          </div>
+          </DivImgInputSearch>
           <span className="text-green">Date</span>
           <select className="bg-transparent text-white">
             <option className="text-black">23/10/2020</option>
@@ -57,11 +40,11 @@ function InputSearch() {
             <option className="text-black">28/10/2020</option>
             <option className="text-black">29/10/2020</option>
           </select>
-        </div>
-        <div className="w-3/12 flex justify-center flex-wrap	items-center gap-3">
-          <div style={cssImg}>
+        </SelectInput>
+        <SelectInput>
+          <DivImgInputSearch >
             <img src={Icon3} />
-          </div>
+          </DivImgInputSearch>
           <span className="text-green">Cinema</span>
           <select className="bg-transparent text-white">
             <option className="text-black">Awaken</option>
@@ -72,9 +55,9 @@ function InputSearch() {
             <option className="text-black">Rome</option>
             <option className="text-black">Khoksa</option>
           </select>
-        </div>
-      </div>
-    </CSSInputSearch>
+        </SelectInput>
+      </DivMainInput>
+    </InputSearch>
   );
 }
-export default InputSearch;
+export default PageInputSearch;

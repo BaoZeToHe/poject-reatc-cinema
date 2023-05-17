@@ -2,8 +2,8 @@ import Movie from "./Moive";
 import EnVent from "./Envents"; 
 import Sport from "./Sport";
 import ContentSide from "./Siders";
-import SearchMovie from "./Search_Header/index";
-import { CssContentHomePage, DivSider, DivContent } from "./CsscontentHomePage";
+import SearchMovie from "../../Search_Header/index";
+import { CssContentHomePage, DivSider, DivContent } from "../CsscontentHomePage";
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 const { Content, Sider } = Layout;
 function ContentHomePage() {

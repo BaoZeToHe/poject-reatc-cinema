@@ -1,4 +1,3 @@
-
 export const DataMovie = [
   {
     img: "./imgMovie/movie01.jpg",

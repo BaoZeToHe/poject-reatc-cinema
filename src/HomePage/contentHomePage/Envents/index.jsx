@@ -1,6 +1,6 @@
 import Item from "antd/es/list/Item";
 
-import { CssContentHomePage, CssDiv, CssH2, CssA, CssCard } from "../CsscontentHomePage";
+import { CssContentHomePage, CssDiv, CssH2, CssA, CssCard } from "../../CsscontentHomePage";
 import { DataEnVent } from "./dataEvent";
 import CardConTentHomePage from "../CardContentHomePage";
 function EnVent() {
