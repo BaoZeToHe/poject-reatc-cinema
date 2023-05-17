@@ -1,5 +1,4 @@
-import { CssSearchMovie } from "../cssHomePage"
-import Button from "../../button/button.jsx"
+import { CssSearchMovie } from "../CsscontentHomePage.jsx"
 import { NavLink } from "react-router-dom"
 import Icon1 from "./inconSearch/ticket-tab01.png"
 import Icon2 from "./inconSearch/ticket-tab02.png"

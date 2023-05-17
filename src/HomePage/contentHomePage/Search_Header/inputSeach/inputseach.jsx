@@ -1,4 +1,4 @@
-import { CSSInputSearch } from "../../cssHomePage";
+import { CSSInputSearch } from "../../CsscontentHomePage";
 import { SearchOutlined } from "@ant-design/icons";
 import Icon1 from "./iconinputseach/cinema.png";
 import Icon2 from "./iconinputseach/city.png";
@@ -12,8 +12,6 @@ function InputSearch() {
     padding: 0,
     height: "45px",
     paddingRight: "50px",
-
-
   }
   const cssImg = {
     width: "40px",
