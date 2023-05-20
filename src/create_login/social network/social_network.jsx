@@ -1,4 +1,4 @@
-import { CssSocialNetwork } from "../CssLogin";
+import { CssSocialNetwork  } from "../CssLogin";
 import { NavLink } from "react-router-dom";
 import {FacebookFilled , TwitterCircleFilled , InstagramFilled} from "@ant-design/icons"
 import { CssA } from "../CssLogin";

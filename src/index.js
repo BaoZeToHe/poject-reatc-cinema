@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+import PageHeader from './header/header';
 import store from './redux/store/index';
+import Footer from './Footer/index.jsx';
 import { Provider } from 'react-redux'
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
+      <div className="sticky top-0 z-50 w-full ">
+        <PageHeader></PageHeader>
+      </div>
       <App />
+      <Footer></Footer>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root')

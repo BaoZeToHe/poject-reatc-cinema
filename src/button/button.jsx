@@ -1,5 +1,5 @@
 import {NavLink} from "react-router-dom"
-function Button(progs){
+function ButtonComponent(progs){
   const {backGround ,backGroundColor , content , ...res} = progs;
   const css = {
     // width : "auto",
@@ -18,4 +18,4 @@ function Button(progs){
     </button>
   )
 }
-export default Button
+export default ButtonComponent

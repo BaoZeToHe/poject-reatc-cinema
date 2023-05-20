@@ -1,4 +1,5 @@
-import { Img, H5, Li, Div, CssDate, CssH6Date, CssSpanDate } from "./CsscontentHomePage";
+import { Img, H5, Li, Div, CssDate, CssH6Date, CssSpanDate } from "../CsscontentHomePage";
+
 function CardConTentHomePage(progs) {
   let contentName;
   let monthSlice;
