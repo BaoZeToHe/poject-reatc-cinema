@@ -2,7 +2,7 @@ import { NavLink, Route, Switch } from "react-router-dom";
 import Button from "../button/button";
 import App_login from "./from_login";
 import App_Sign_up from "./from_sign_up";
-import SocialNetwork from "./social network/social_network";
+import SocialNetwork from "./social_network/social_network";
 function Page_login() {
   const css = {
     maxWidth: 540,

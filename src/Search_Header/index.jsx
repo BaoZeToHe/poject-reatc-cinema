@@ -18,7 +18,6 @@ function SearchMovie() {
           style={isActive => ({
             transition: "all ease 0.3s",
             background: isActive ? "linear-gradient(169deg, #ff4343 0%, #aa52a1 37%, #5560ff 83%)" : "#7d78ff",
-
           })}>
             <span className="w-10 "><img src={Icon1} className="w-full " /></span>
             <span className="pl-2 font-bold p-2.5" > movie </span>
