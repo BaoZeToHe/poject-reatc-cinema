@@ -13,7 +13,7 @@ function ButtonComponent(progs){
     textTransform: "uppercase"
   }
   return (
-    <button className="button "  style={css}>
+    <button className="button "  style={css} {...res}>
         {content}
     </button>
   )
