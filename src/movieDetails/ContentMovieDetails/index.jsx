@@ -1,14 +1,13 @@
 import {
-  Div_Content,
-  Div_offer_item,
-  Div_Carousel2,
-  Div_Tab,
+  DivContent,
+  DivCarousel2,
+  DivTab,
 } from "../cssMovieDetails";
 import React from "react";
-
 import OwlCarousel from "react-owl-carousel2";
 import { NavLink, Route, Switch } from "react-router-dom";
 import Summery from "./summery.jsx";
+
 function PageContentMovieDetails() {
   const item = {
     itemImg: [
@@ -23,7 +22,6 @@ function PageContentMovieDetails() {
       },
     ],
   };
-  const a = '<h1 style = " display : none">Hello Style!</h1>';
   const options = {
     item: 3,
     margin: 8,
@@ -33,19 +31,30 @@ function PageContentMovieDetails() {
       '<h1 style = " display : none">Hello Style!</h1>',
       '<h1 style = " display : none">Hello Style!</h1>',
     ],
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
   };
   return (
-    <Div_Content>
+    <DivContent>
 
       <h3>Photos</h3>
-      <Div_Carousel2>
+      <DivCarousel2>
         <OwlCarousel options={options}>
           {item.itemImg.map((item) => (
             <img src={item.img} />
           ))}
         </OwlCarousel>
-      </Div_Carousel2>
-      <Div_Tab>
+      </DivCarousel2>
+      <DivTab>
         <ul>
           <li>
             <NavLink to="/movie-details/summery">summery</NavLink>
@@ -54,13 +63,14 @@ function PageContentMovieDetails() {
             <NavLink to="/movie-details/2">user review</NavLink>
           </li>
         </ul>
-      </Div_Tab>
+      </DivTab>
       <Switch>
         <Route path="/movie-details/summery">
           <Summery></Summery>
         </Route>
       </Switch>
-    </Div_Content>
+    </DivContent>
   );
 }
+
 export default PageContentMovieDetails;

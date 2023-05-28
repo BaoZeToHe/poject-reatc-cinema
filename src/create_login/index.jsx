@@ -14,7 +14,7 @@ function Login() {
     alignItems: "center",
   }
   return (
-    <div className="page_login_create" style={css} >
+    <div className="page_login_create" style={css}>
       <CssLoginPage>
         <Page_login></Page_login>
       </CssLoginPage>

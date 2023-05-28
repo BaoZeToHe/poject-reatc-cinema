@@ -48,11 +48,9 @@ function CardConTentHomePage(progs) {
       <div className="px-5">
         <H5 >{progs.content.name}</H5>
         {contentName}
-
-
       </div>
-
     </Div>
   );
 }
+
 export default CardConTentHomePage;

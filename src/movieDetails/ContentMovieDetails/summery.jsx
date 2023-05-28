@@ -1,9 +1,9 @@
 import {
-  Div_Tab,
-  Div_Carousel2,
-  Card_thumb,
-  Card_content,
-  Div_header,
+  DivTab,
+  DivCarousel2,
+  CardThumb,
+  CardContent,
+  DivHeader,
 } from "../cssMovieDetails";
 import OwlCarousel from "react-owl-carousel2";
 
@@ -83,10 +83,10 @@ function Summery() {
         items: 4
       }
     }
-  };
+  };  
   return (
     <div>
-      <Div_Tab>
+      <DivTab>
         <h3>Synopsis</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -99,53 +99,53 @@ function Summery() {
           pharetra orci lectus quis sapien. Duis blandit ipsum ac consectetur
           scelerisque.
         </p>
-      </Div_Tab>
-      <Div_Tab>
-        <Div_header className="relative">
+      </DivTab>
+      <DivTab>
+        <DivHeader className="relative">
           <h3>cast</h3>
-        </Div_header>
-        <Div_Carousel2>
+        </DivHeader>
+        <DivCarousel2>
           <OwlCarousel options={options} item = {1}>
             {cast.ValueCast.map((item) => (
               <div>
-                <Card_thumb>
+                <CardThumb>
                   <a>
                     <img src={item.img} />
                   </a>
-                </Card_thumb>
-                <Card_content>
+                </CardThumb>
+                <CardContent>
                   <h6>{item.name}</h6>
                   <span>{item.role}</span>
                   <p>{item.shoulder}</p>
-                </Card_content>
+                </CardContent>
               </div>
             ))}
           </OwlCarousel>
-        </Div_Carousel2>
-      </Div_Tab>
-      <Div_Tab>
-        <Div_header className="relative">
+        </DivCarousel2>
+      </DivTab>
+      <DivTab>
+        <DivHeader className="relative">
           <h3>crew</h3>
-        </Div_header>
-        <Div_Carousel2>
+        </DivHeader>
+        <DivCarousel2>
           <OwlCarousel options={options} item={1}>
             {cast.ValueCrew.map((item) => (
               <div>
-                <Card_thumb>
+                <CardThumb>
                   <a>
                     <img src={item.img} />
                   </a>
-                </Card_thumb>
-                <Card_content>
+                </CardThumb>
+                <CardContent>
                   <h6>{item.name}</h6>
                   <span>{item.role}</span>
                   <p>{item.shoulder}</p>
-                </Card_content>
+                </CardContent>
               </div>
             ))}
           </OwlCarousel>
-        </Div_Carousel2>
-      </Div_Tab>
+        </DivCarousel2>
+      </DivTab>
     </div>
   );
 }
