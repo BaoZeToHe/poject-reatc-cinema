@@ -1,10 +1,10 @@
 // import {legacy_createStore as createStore  } from 'redux'
-import rootReducer from '../reducer/index.js';
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
-import mySaga from "../sagas/index.js"
+import mySaga from "../Saga/index.js"
 import { composeWithDevTools } from "redux-devtools-extension";
-// const store = createStore(rootReducer )
+import { rootReducer } from "../Slice/index.js"
+
 const sagaMiddleware = createSagaMiddleware()
 const store = createStore(
   rootReducer,
