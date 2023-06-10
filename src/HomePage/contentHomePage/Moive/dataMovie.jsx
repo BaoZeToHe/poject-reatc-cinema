@@ -1,20 +1,22 @@
-export const DataMovie = [
-  {
-    img: "./imgMovie/movie01.jpg",
-    name : "Alone",
-    tomato : 88 ,
-    like : 88 ,
-  },
-  {
-    img: "./imgMovie/movie02.jpg",
-    name: "Mars",
-    tomato: 88,
-    like: 88,
-  },
-  {
-    img: './imgMovie/movie03.jpg',
-    name: "Venus",
-    tomato: 88,
-    like: 88,
-  },
-]
+import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { comMonMovieGateMax } from "../../../redux/Slice/sliceDataMovie";
+import { Movie } from "./index.jsx";
+
+function DataMovie() {
+  const dispatch = useDispatch();
+  const data = useSelector((state) => state.DataSlice.data);
+  useEffect(() => {
+    dispatch(
+      comMonMovieGateMax({
+        _limit: 3,
+      })
+    );
+  }, []);
+  return {
+    data,
+  };
+}
+
+export default DataMovie;
