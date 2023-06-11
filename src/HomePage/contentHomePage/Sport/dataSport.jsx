@@ -1,20 +1,20 @@
-export const DataSport = [
-  {
-    img: "./imgSport/sports01.jpg",
-    name: "football league tournament",
-    date: "2023-12-28",
-    located: "327 Montague Street"
-  },
-  {
-    img: "./imgSport/sports02.jpg",
-    name: "world cricket league 2020",
-    date: "2023-12-28",
-    located: "327 Montague Street"
-  },
-  {
-    img: "./imgSport/sports03.jpg",
-    name: "basket ball tournament 2020",
-    date: "2023-12-28",
-    located: "327 Montague Street"
-  },
-]
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { getSportRequest } from "../../../redux/Slice/sliceDataSport.js";
+
+function DataSport() {
+  const dispatch = useDispatch();
+  const data = useSelector((state) => state.DataSportSlice.data);
+  useEffect(() => {
+    dispatch(
+      getSportRequest({
+        _limit: 3,
+      })
+    );
+  }, []);
+  return {
+    data,
+  };
+}
+
+export default DataSport;

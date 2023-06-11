@@ -1,15 +1,13 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { comMonMovieGateMax } from "../../../redux/Slice/sliceDataMovie";
-import { Movie } from "./index.jsx";
+import { getMoviesRequest } from "../../../redux/Slice/sliceDataMovie";
 
 function DataMovie() {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.DataSlice.data);
   useEffect(() => {
     dispatch(
-      comMonMovieGateMax({
+      getMoviesRequest({
         _limit: 3,
       })
     );

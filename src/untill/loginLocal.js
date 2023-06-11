@@ -10,4 +10,5 @@ export function getLocalLogin() {
 
 export function clearLocalLogin() {
   localStorage.clear(LOGIN_KEY);
+  
 }

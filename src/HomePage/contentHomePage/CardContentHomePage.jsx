@@ -12,7 +12,7 @@ function CardConTentHomePage(progs) {
   let contentName;
   let monthSlice;
   const { img, like, name, ...red } = progs.content;
-  let newDate = new Date(progs.content.date);
+  let newDate = new Date(progs.content.premiere);
   const monthNames = [
     "January",
     "February",

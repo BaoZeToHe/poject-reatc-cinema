@@ -5,12 +5,12 @@ const initialState = {
   isSignIn: true,
   data: [],
 };
-export const moviesReducer = createSlice({
+export const DataEventSlice = createSlice({
   name: "dataEvents",
   initialState,
   reducers: {
-    getMoviesRequest: () => {},
-    getMoviesSuccess: (state, action) => {
+    getEventRequest: () => {},
+    getEventSuccess: (state, action) => {
       return {
         ...state,
         data: action.payload,
@@ -19,6 +19,6 @@ export const moviesReducer = createSlice({
   },
 });
 
-export const { getMoviesRequest, getMoviesSuccess } = moviesReducer.actions;
+export const { getEventRequest, getEventSuccess } = DataEventSlice.actions;
 
-export default moviesReducer.reducer;
+export default DataEventSlice.reducer;

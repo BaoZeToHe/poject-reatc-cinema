@@ -7,16 +7,14 @@ const initialState = {
 };
 
 export const reducerSlice = createSlice({
-  name: "counter",
+  name: "create",
   initialState,
   reducers: {
     setAuth: (state, action) => {
       state.isAuth = action.payload;
     },
     addRegister: () => {},
-    commonLogin: (state, action) => {
-      console.log(state, action);
-    },
+    commonLogin: (state, action) => {},
 
     setIsSignIn: (state, action) => {
       state.isSignIn = action.payload;

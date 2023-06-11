@@ -1,8 +1,7 @@
-import Item from "antd/es/list/Item";
-
 import { CssContentHomePage, CssDiv, CssH2, CssA, CssCard } from "../../CsscontentHomePage";
-import { DataEnVent } from "./dataEvent";
+import DataEnVent  from "./dataEvent";
 import CardConTentHomePage from "../CardContentHomePage";
+
 function EnVent() {
   return (
     <CssContentHomePage className="pt-0">
@@ -12,7 +11,7 @@ function EnVent() {
       </CssDiv>
       <CssCard>
         {
-          DataEnVent.map(Item => (
+          DataEnVent().data.map(Item => (
             <CardConTentHomePage content={Item} />
           ))
         }
@@ -20,4 +19,5 @@ function EnVent() {
     </CssContentHomePage >
   )
 }
+
 export default EnVent;
