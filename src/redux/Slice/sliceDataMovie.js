@@ -3,22 +3,22 @@ import { createAction, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isAuth: false,
   isSignIn: true,
-  data : []
+  data: [],
 };
-export const DataSlice = createSlice({
-  name: "data",
+export const moviesReducer = createSlice({
+  name: "dataEvents",
   initialState,
   reducers: {
-    comMonMovieGateMax: (state, action) => {},
-    getCommonMovieSuc: (state, action) => {
+    getMoviesRequest: () => {},
+    getMoviesSuccess: (state, action) => {
       return {
         ...state,
-        data : action.payload,
+        data: action.payload,
       };
     },
   },
 });
 
-export const { comMonMovieGateMax, getCommonMovieSuc } = DataSlice.actions;
+export const { getMoviesRequest, getMoviesSuccess } = moviesReducer.actions;
 
-export default DataSlice.reducer;
+export default moviesReducer.reducer;

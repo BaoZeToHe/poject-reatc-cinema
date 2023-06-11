@@ -1,8 +1,7 @@
-import Item from "antd/es/list/Item";
-
 import { CssContentHomePage, CssDiv, CssH2, CssA, CssCard } from "../../CsscontentHomePage";
-import { DataSport } from "./dataSport";
+import DataSport  from "./dataSport.jsx";
 import CardConTentHomePage from "../CardContentHomePage";
+
 function Sport() {
   return (
     <CssContentHomePage className="pt-0">
@@ -12,7 +11,7 @@ function Sport() {
       </CssDiv>
       <CssCard>
         {
-          DataSport.map(Item => (
+          DataSport().data.map(Item => (
             <CardConTentHomePage content={Item} />
           ))
         }
@@ -20,4 +19,5 @@ function Sport() {
     </CssContentHomePage >
   )
 }
+
 export default Sport;

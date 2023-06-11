@@ -1,4 +1,4 @@
-import { DataGridMovie } from "./DataGridMovie"
+import DataGridMovie  from "./DataGridMovie.jsx"
 import CardGridMovie from "../CardGridMovie"
 import { CssCard, DivFilter, DivFilterMain, DivFilterItem, SelectFilter , UlFilter, DivLeftFilter } from "../cssMovieGrid"
 function PageGirdMovie() {
@@ -34,11 +34,11 @@ function PageGirdMovie() {
         </DivFilterMain>
       </DivFilter>
       <CssCard>
-        {
+        {/* {
           DataGridMovie.map(Item => (
             <CardGridMovie content={Item} />
           ))
-        }
+        } */}
       </CssCard>
     </>
   )
