@@ -25,7 +25,7 @@ function Footer() {
             <DivH5>subscribe to Boleto </DivH5>
             <DivH3>to get exclusive benifits</DivH3>
           </div>
-          <from className="flex">
+          <div className="flex">
             <DivInput type="text" placeholder="Your Email Address" />
             <div className="absolute right-0">
               <Button
@@ -35,7 +35,7 @@ function Footer() {
                 htmlType="submit"
               ></Button>
             </div>
-          </from>
+          </div>
           <p className="text-white mt-9">
             We respect your privacy, so we never share your info
           </p>
@@ -43,7 +43,7 @@ function Footer() {
       </DivInputFooter>
       <DivInformationFooter>
         <div className="w-4/12 relative z-50">
-          <img src="./imgFooter/logo.png" />
+          <img src="../imgFooter/logo.png" />
         </div>
         <ul className="w-8/12 flex justify-end gap-5">
           <li>

@@ -1,15 +1,17 @@
 import styled from "styled-components";
 
 export const DivFooter = styled.div`
+  width: 100%;
   background-color: #001232;
   position: relative;
   color: #dbe2fb;
   padding: 20px;
+
   &::before {
     content: "";
     width: 100%;
     position: absolute;
-    background-image: url("./imgFooter/footer-shape.png");
+    background-image: url("../imgFooter/footer-shape.png");
     top: 120px;
     bottom: 0;
     right: 0;
@@ -21,7 +23,7 @@ export const DivFooter = styled.div`
 export const DivInputFooter = styled.div`
   max-width: 1120px;
   margin: auto;
-  background-image: url("./imgFooter/newslater-bg01.jpg");
+  background-image: url("../imgFooter/newslater-bg01.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

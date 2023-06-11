@@ -1,5 +1,6 @@
 import { Img, H5, Li, Div } from "./cssMovieGrid";
 import { NavLink } from "react-router-dom";
+
 function CardGridMovie(progs) {
   return (
       <Div>
@@ -32,4 +33,5 @@ function CardGridMovie(progs) {
 
   );
 }
+
 export default CardGridMovie;

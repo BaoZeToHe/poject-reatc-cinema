@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import Page_login from "./Page_login";
 import bg_img from "./account-bg.jpg";
 import { CssLoginPage } from "./CssLogin";
+
 function Login() {
   const css = {
     width: "98.9vw",
@@ -14,7 +15,7 @@ function Login() {
     alignItems: "center",
   }
   return (
-    <div className="page_login_create" style={css} >
+    <div className="page_login_create" style={css}>
       <CssLoginPage>
         <Page_login></Page_login>
       </CssLoginPage>

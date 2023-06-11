@@ -1,7 +1,6 @@
 import Item from "antd/es/list/Item";
-
 import { CssContentHomePage, CssDiv, CssH2, CssA, CssCard } from "../../CsscontentHomePage";
-import { DataMovie } from "./dataMovie";
+import dataMovie  from "./dataMovie.jsx";
 import CardConTentHomePage from "../CardContentHomePage";
 
 function Movie() {
@@ -13,7 +12,7 @@ function Movie() {
       </CssDiv>
       <CssCard>
         {
-          DataMovie.map(Item => (
+          dataMovie().data.map(Item => (
             <CardConTentHomePage content={Item} />
           ))
         }

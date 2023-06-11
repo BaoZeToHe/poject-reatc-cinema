@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const DivBackGround = styled.div`
-  background-image: url("./imgMovieDetailsPulic/banner03.jpg");
+  background-image: url("../imgMovieDetailsPulic/banner03.jpg");
   padding-top: 235px;
   padding-bottom: 20px;
   position: relative;
@@ -26,11 +26,12 @@ export const DivContainer = styled.div`
   max-width: 1170px;
   margin: auto;
 `;
-export const Div_details = styled.div`
+
+export const DivDetails = styled.div`
   position: relative;
   z-index: 1;
 `;
-export const Div_thumb = styled.div`
+export const DivThumb = styled.div`
   position: absolute;
   top: 10px;
   left: 0;
@@ -46,8 +47,11 @@ export const Div_thumb = styled.div`
     right: 0;
     background-color: rgba(0, 18, 50, 0.4);
   }
+  @media (max-width: 880px) {
+    display: none;
+  }
 `;
-export const Div_thumb_clip = styled.a`
+export const DivThumbClip = styled.a`
   width: 81px;
   height: 81px;
   position: absolute;
@@ -57,18 +61,31 @@ export const Div_thumb_clip = styled.a`
   transform: translate(-50%, -50%);
   z-index: 1;
 `;
-export const Div_details_content = styled.div`
-  margin-left: 25%;
+export const DivSocialAndDuration = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 350px) {
+    flex-wrap: wrap;
+  }
 `;
-export const Div_details_Tag = styled.div`
+export const DivDetailsContent = styled.div`
+  margin-left: 25%;
+  @media (min-width: 350px) {
+    margin-left: 0%;
+  }
+  @media (min-width: 850px) {
+    margin-left: 0%;
+  }
+`;
+export const DivDetailsTag = styled.div`
   margin-bottom: 21px;
 `;
-export const A_details_Tag = styled.a`
+export const ADetailsTag = styled.a`
   font-size: 14px;
   color: #9aace5;
   text-transform: uppercase;
 `;
-export const A_details_tag_main = styled.a`
+export const ADetailsTagMain = styled.a`
   margin-bottom: 13px;
   display: inline-block;
   border: 1px solid rgba(163, 177, 198, 0.2);
@@ -105,13 +122,25 @@ export const CssA = styled.a`
     );
   }
 `;
-export const Div_book = styled.div`
+export const DivBook = styled.div`
   padding: 47px 0;
   border-top: 1px solid #17305f;
   border-bottom: 1px solid #17305f;
   background-color: #032055;
 `;
-export const Div_book_left = styled.div`
+export const DivBookWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -30px;
+  margin-left: 25%;
+  @media (max-width: 880px) {
+    margin-left: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+`;
+export const DivBookLeft = styled.div`
   margin: -10px -15px;
   margin-bottom: 20px;
   display: flex;
@@ -126,18 +155,26 @@ export const Div_book_left = styled.div`
     font-size: 24px;
     color: white;
   }
+  @media (max-width: 880px) {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  @media (max-width: 400px) {
+    justify-content: space-between;
+  }
 `;
-export const Div_book_item = styled.div`
+export const DivBookItem = styled.div`
   margin: 10px 15px;
   text-align: center;
 `;
-export const Div_book_item_header = styled.div`
+export const DivBookItemHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
 `;
-export const Div_movie_details_section = styled.div`
+export const DivMovieDetailsSection = styled.div`
   padding-top: 80px;
   background: #001232;
   font-size: 16px;
@@ -145,27 +182,29 @@ export const Div_movie_details_section = styled.div`
   line-height: 28px;
   display: flex;
   justify-content: space-between;
-  @media (min-width: 780px) {
+
+  @media (max-width: 780px) {
+    justify-content: center;
     padding-bottom: 80px;
+    flex-wrap: wrap;
   }
   @media (min-width: 992px) {
     padding-bottom: 120px;
   }
 `;
 
-export const Div_Slier_Content = styled.div`
+export const DivSlierContent = styled.div`
   transform: translateY(-40px);
+  order: 1;
   margin-bottom: 0px;
-  @media (min-width: 380px) {
-    max-width: 83.333333%;
-    margin-bottom: 30px;
-  }
-  @media (min-width: 780px) {
+  @media (max-width: 850px) {
     max-width: 50%;
     margin-bottom: 30px;
+    order: 2;
   }
-  @media (min-width: 992px) {
-    max-width: 25%;
+  @media (max-width: 400px) {
+    max-width: 100%;
+    padding: 20px;
   }
   li {
     padding: 10px;
@@ -194,7 +233,25 @@ export const Div_Slier_Content = styled.div`
     margin-bottom: 30px;
   }
 `;
-export const Div_offer_item = styled.div`
+export const DivContent = styled.div`
+  margin-bottom: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  order: 2;
+  width: 75%;
+  h3 {
+    font-size: 28px;
+    margin-bottom: 23px;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+
+  @media (max-width: 850px) {
+    order: 1;
+    width: 100%;
+  }
+`;
+export const DivOfferItem = styled.div`
   width: 100%;
   border: 1px dashed #1f3253;
   border-radius: 10px;
@@ -208,34 +265,19 @@ export const Div_offer_item = styled.div`
     color: white;
   }
 `;
-export const Div_header = styled.div`
+export const DivHeader = styled.div`
   padding-bottom: 14px;
   border-bottom: 1px dashed #11326f;
   margin-bottom: 40px;
   position: relative;
 `;
-export const Div_Content = styled.div`
-  margin-bottom: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
 
-  h3 {
-    font-size: 28px;
-    margin-bottom: 23px;
-    text-transform: uppercase;
-    margin-top: -10px;
-  }
-  @media (min-width: 992px) {
-    width: 75%;
-  }
-`;
-export const Div_Carousel2 = styled.div`
+export const DivCarousel2 = styled.div`
   width: 100%;
   margin-bottom: 60px;
   .owl-stage-outer {
     position: relative;
     overflow: hidden;
-
     .owl-item {
       width: 262.5px;
       margin-right: 30px;
@@ -249,10 +291,11 @@ export const Div_Carousel2 = styled.div`
     }
     img {
       border-radius: 5px;
+      width: 100%;
     }
   }
 `;
-export const Card_thumb = styled.div`
+export const CardThumb = styled.div`
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -270,10 +313,10 @@ export const Card_thumb = styled.div`
     border-radius: 50% !important ;
   }
 `;
-export const Card_content = styled.div`
+export const CardContent = styled.div`
   width: 100%;
   text-align: center;
-  .owl-nav{
+  .owl-nav {
     background-color: red !important;
   }
   h6 {
@@ -286,25 +329,25 @@ export const Card_content = styled.div`
       margin-top: -5px;
     }
   }
-  span{
-    color : #31d7a9;
+  span {
+    color: #31d7a9;
     display: block;
     font-size: 14px;
     margin-bottom: 17px;
-    line-height: 1.5
+    line-height: 1.5;
   }
-  P{
+  P {
     font-size: 14px;
     margin-bottom: 0px !important;
-    color : #9aace5;
+    color: #9aace5;
   }
 `;
-export const Div_item = styled.div`
+export const DivItem = styled.div`
   margin-bottom: 60px;
 `;
-export const Div_Tab = styled.div`
+export const DivTab = styled.div`
   margin-top: 40px;
-    position: relative;
+  position: relative;
 
   ul {
     padding: 10px 0;
