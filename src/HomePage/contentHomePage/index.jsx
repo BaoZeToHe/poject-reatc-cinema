@@ -5,6 +5,7 @@ import ContentSide from "./Siders";
 import SearchMovie from "../../Search_Header/index";
 import { CssContentHomePage, DivSider, DivContent } from "../CsscontentHomePage";
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
+
 const { Content, Sider } = Layout;
 function ContentHomePage() {
   return (

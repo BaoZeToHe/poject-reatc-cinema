@@ -1,4 +1,5 @@
 import ChangeTest from "./changeText";
+
 function ContentIntro() {
   return (
   <div className="w-full text-center  text-white " style={{position : "absolute" , top : "calc(50% - 42px - 30px)" , right : "0px" , zIndex : 3}}>

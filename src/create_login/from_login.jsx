@@ -1,11 +1,10 @@
 import { Checkbox, Form, Input } from "antd";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useHistor } from "react-router-dom";
 import { CssInputLoginLabel } from "./CssLogin";
 import Button from "../button/button";
 import { useDispatch } from "react-redux";
 import { commonLogin } from "../redux/Slice/sliceLogin.js";
 import { useState, useEffect } from "react";
-import { getLocalLogin } from "../untill/loginLocal";
 
 function App_login() {
   const dispatch = useDispatch();
@@ -19,7 +18,6 @@ function App_login() {
       email: values.username,
       password: values.password,
     }));
-
   };
   useEffect(() => {
     if (meta.email != null) {
@@ -33,7 +31,7 @@ function App_login() {
   }, [meta.email, meta.password]);
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
-  };  
+  };
 
   return (
     <Form
@@ -43,7 +41,6 @@ function App_login() {
       wrapperCol={{ span: 16 }}
       style={{
         maxWidth: "100%",
-        color: "#dbe2fb",
         fontSize: "16px",
         lineHeight: "28px",
       }}
@@ -70,6 +67,7 @@ function App_login() {
           type="text "
           placeholder="Enter Your Email"
           className="w-full text-gray bg-transparent border-0 border-b-[1px] border-blackInput"
+          style={{ color: "#dbe2fb" }}
         />
       </Form.Item>
 
@@ -89,6 +87,7 @@ function App_login() {
           type="Password"
           placeholder="password"
           className="w-full text-gray bg-transparent border-0 border-b-[1px] border-blackInput"
+          style={{ color: "#dbe2fb" }}
         />
       </Form.Item>
       <Form.Item

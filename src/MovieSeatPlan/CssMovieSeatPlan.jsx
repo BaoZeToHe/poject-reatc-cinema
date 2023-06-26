@@ -44,6 +44,7 @@ export const DivChairMovie = styled.div`
   }
 `;
 export const DivSeatPlan = styled.div`
+  background-color: #001232;
   @media (min-width: 992px) {
     padding-bottom: 120px;
     padding-top: 120px;
@@ -250,5 +251,294 @@ export const DivBook = styled.div`
     font-size: 36px;
     font-weight: 700;
     margin-top: -10px;
+  }
+`;
+export const DivPageCheckOut = styled.div`
+  width: 100%;
+  color: #9aace5;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  h5 {
+    line-height: 1.3;
+    color: #ffffff;
+    @media (min-width: 768px) {
+      margin-bottom: 23px;
+    }
+    @media (min-width: 576px) {
+      font-size: 24px;
+      margin-top: -8px;
+    }
+  }
+`;
+export const DivReceipt = styled.div`
+  height: 50%;
+  padding: 30px;
+  font-size: 16px;
+  color: #dbe2fb;
+  line-height: 28px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #032055;
+  position: relative;
+  @media (min-width: 576px) {
+    h4 {
+      color: #ffffff;
+      font-size: 28px;
+      margin-bottom: 40px;
+      text-align: center;
+      border-bottom: 1px dashed #11326f;
+      padding-bottom: 23px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+`;
+export const DivUl = styled.ul`
+  a {
+    width: 90px;
+    border-radius: 10px;
+    border: 1px solid #11326f;
+    text-align: center;
+    padding: 20px 10px 18px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      margin-top: auto;
+      margin-bottom: 10px;
+    }
+  }
+  li {
+    padding: 15px;
+    list-style: none;
+  }
+  span {
+    font-size: 12px;
+    text-transform: capitalize;
+    display: block;
+    color: #ffffff;
+    line-height: 1.2;
+  }
+  @media (min-width: 576px) {
+    margin-bottom: 40px;
+    list-style: none;
+  }
+`;
+export const TagA = styled.a`
+  span {
+    line-height: 30px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: -webkit-linear-gradient(169deg, #5560ff 0%, #ff4343 100%);
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  a {
+    color: #ffffff;
+  }
+`;
+export const TagH4 = styled.h4`
+  width: 100%;
+  text-align: left;
+  color: #ffffff;
+  font-size: 24px;
+  margin-top: -8px;
+  margin-bottom: 40px;
+  border-bottom: 1px dashed #11326f;
+  padding-bottom: 23px;
+  font-weight: 600;
+  text-transform: uppercase;
+`;
+export const TagH6 = styled.h6`
+  width: 100%;
+  line-height: 1.3;
+  color: #ffffff;
+  @media (min-width: 576px) {
+    font-size: 18px;
+    margin-top: -5px;
+    margin-bottom: 24px;
+  }
+`;
+export const DivInforMation = styled.div`
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #032055;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 576px) {
+    h5 {
+      font-size: 24px;
+      margin-top: -8px;
+    }
+  }
+  @media (min-width: 768px) {
+    h5 {
+      font-size: 23px;
+    }
+  }
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+  }
+`;
+export const DivInput = styled.div`
+  margin-bottom: 30px;
+  @media (min-width: 576px) {
+    width: calc(50% - 15px);
+  }
+`;
+export const InputContact = styled.input`
+  width: 100%;
+  background: transparent;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid #11326f;
+  border-radius: 0;
+  padding: 0;
+  font-size: 14px;
+`;
+export const InputPay = styled.input`
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #11326f;
+`;
+export const DivLock = styled.div`
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  line-height: 60px;
+  font-size: 24px;
+  color: #11326f;
+`;
+export const DivFromPay = styled.div`
+  position: relative;
+  margin-bottom: 14px;
+  width: 100%;
+`;
+export const TagLabelCheckBox = styled.label`
+  width: calc(100% - 30px);
+  padding-left: 20px;
+  margin: 0;
+  span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+`;
+export const DivCheck = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  input {
+    width: 30px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #11326f;
+  }
+`;
+export const TagNotice = styled.p`
+  width: 100%;
+  margin-top: 18px;
+  font-size: 14px;
+  display: block;
+  color: #9aace5;
+  margin-bottom: -8px !important;
+  a {
+    color: #7c84ff;
+  }
+`;
+export const TagUlReceipt = styled.ul`
+  border-bottom: 1px dashed #11326f;
+  li {
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 30px;
+    h6 {
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: -5px;
+      line-height: 1.3;
+      text-transform: uppercase;
+    }
+  }
+`;
+export const TagUlReceipt2 = styled.ul`
+  border-bottom: 1px dashed #11326f;
+  position: relative;
+  &::before {
+    width: 48px;
+    height: 48px;
+    background-color: #001232;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: -48px;
+    right: -56px;
+  }
+  &::after {
+    width: 48px;
+    height: 48px;
+    background-color: #001232;
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    top: -48px;
+    left: -56px;
+  }
+  li {
+    margin-top: 30px;
+    padding: 0;
+    margin-bottom: 30px;
+    h6 {
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 7px;
+      font-weight: 600;
+      font-size: 18px;
+      margin-top: -5px;
+      line-height: 1.3;
+
+      text-transform: uppercase;
+    }
+  }
+`;
+export const TagSpanReceipt = styled.span`
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #9aace5;
+`;
+export const DivCheckOutReceipt = styled.div`
+  background: #05245c;
+  padding: 30px;
+  text-align: center;
+  h6 {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 23px;
   }
 `;

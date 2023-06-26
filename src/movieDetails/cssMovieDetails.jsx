@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const DivBackGround = styled.div`
-  background-image: url("../imgMovieDetailsPulic/banner03.jpg");
-  padding-top: 235px;
+  width: 100%;
+  padding-top: 300px;
   padding-bottom: 20px;
   position: relative;
   background-size: cover;
@@ -16,7 +16,6 @@ export const DivBackGround = styled.div`
     bottom: 0;
     right: 0;
     background: -webkit-linear-gradient(
-      180deg,
       rgba(0, 18, 50, 0.134891) 0%,
       #001232 90%
     );
@@ -32,6 +31,8 @@ export const DivDetails = styled.div`
   z-index: 1;
 `;
 export const DivThumb = styled.div`
+  width: calc(25% - 28px);
+  display: block;
   position: absolute;
   top: 10px;
   left: 0;
@@ -45,7 +46,7 @@ export const DivThumb = styled.div`
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 18, 50, 0.4);
+    /* background-color: rgba(0, 18, 50, 0.4); */
   }
   @media (max-width: 880px) {
     display: none;
@@ -69,12 +70,11 @@ export const DivSocialAndDuration = styled.div`
   }
 `;
 export const DivDetailsContent = styled.div`
-  margin-left: 25%;
   @media (min-width: 350px) {
     margin-left: 0%;
   }
-  @media (min-width: 850px) {
-    margin-left: 0%;
+  @media (min-width: 992px) {
+    margin-left: 25%;
   }
 `;
 export const DivDetailsTag = styled.div`
@@ -82,7 +82,7 @@ export const DivDetailsTag = styled.div`
 `;
 export const ADetailsTag = styled.a`
   font-size: 14px;
-  color: #9aace5;
+  color: white;
   text-transform: uppercase;
 `;
 export const ADetailsTagMain = styled.a`
@@ -90,7 +90,7 @@ export const ADetailsTagMain = styled.a`
   display: inline-block;
   border: 1px solid rgba(163, 177, 198, 0.2);
   font-size: 13px;
-  color: #9aace5;
+  color: white;
   text-transform: uppercase;
   padding: 3px 17px;
   border-radius: 18px;
@@ -197,6 +197,7 @@ export const DivSlierContent = styled.div`
   transform: translateY(-40px);
   order: 1;
   margin-bottom: 0px;
+  width: 25%;
   @media (max-width: 850px) {
     max-width: 50%;
     margin-bottom: 30px;
@@ -279,7 +280,6 @@ export const DivCarousel2 = styled.div`
     position: relative;
     overflow: hidden;
     .owl-item {
-      width: 262.5px;
       margin-right: 30px;
     }
     .owl-stage {
@@ -292,6 +292,7 @@ export const DivCarousel2 = styled.div`
     img {
       border-radius: 5px;
       width: 100%;
+      height: 100%;
     }
   }
 `;

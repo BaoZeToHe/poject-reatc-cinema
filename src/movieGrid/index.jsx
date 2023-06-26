@@ -1,7 +1,9 @@
 import { Body, H1ContentMovieGrid, DivContent, BgMovieGrid, PContentMovieGrid, DivListMovie } from "./cssMovieGrid";
 import SearchMovie from "../Search_Header";
 import ContentMovieGrid from "./ContentMovieGrid";
+
 function MovieGrid() {
+  
   return (
     <div className="bg-[#001232]  ">
       <Body>

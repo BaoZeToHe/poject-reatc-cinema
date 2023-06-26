@@ -75,6 +75,7 @@ function SetAuth() {
           type="text"
           placeholder="Enter Your Email"
           className="w-full text-gray  bg-transparent border-0 border-b-[1px] border-blackInput"
+          style={{ color: "#dbe2fb" }}
         />
       </Form.Item>
       <Form.Item
@@ -95,6 +96,7 @@ function SetAuth() {
           type="password"
           placeholder="Password"
           className="w-full text-gray bg-transparent border-0 border-b-[1px] border-blackInput"
+          style={{ color: "#dbe2fb" }}
         />
       </Form.Item>
       <Form.Item
@@ -115,6 +117,7 @@ function SetAuth() {
           type="password"
           placeholder="Password"
           className="w-full text-gray bg-transparent border-0 border-b-[1px] border-blackInput"
+          style={{ color: "#dbe2fb" }}
         />
       </Form.Item>
       <Form.Item

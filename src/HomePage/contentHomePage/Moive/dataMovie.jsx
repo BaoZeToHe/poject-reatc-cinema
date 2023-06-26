@@ -4,7 +4,7 @@ import { getMoviesRequest } from "../../../redux/Slice/sliceDataMovie";
 
 function DataMovie() {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.DataSlice.data);
+  const data = useSelector((state) => state.DataMovieSlice.data);
   useEffect(() => {
     dispatch(
       getMoviesRequest({

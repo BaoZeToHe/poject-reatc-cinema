@@ -83,8 +83,8 @@ export const DivContentGridMovie = styled.div`
 export const CssCard = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 15px;
   flex-wrap: wrap;
   @media (max-width: 820px) {
     flex-wrap: wrap;
@@ -102,6 +102,7 @@ export const Img = styled.img`
   }
 `;
 export const H5 = styled.h5`
+  height: 8rem ;
   padding: 23px 0;
   text-transform: capitalize;
   border-bottom: 1px dashed #11326f;
@@ -250,3 +251,17 @@ export const SpanWordMovieGrid = styled.span`
   height: 12px;
   display: inline-block;
 `;
+
+export const ButtonSplitPage = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  a{
+    width: 42px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    color: #ffffff
+  }
+`

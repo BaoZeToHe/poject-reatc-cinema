@@ -1,5 +1,4 @@
-import { createAction, createSlice } from "@reduxjs/toolkit";
-import { type } from "@testing-library/user-event/dist/type";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isAuth: false,
@@ -22,7 +21,6 @@ export const reducerSlice = createSlice({
   },
 });
 
-export const { setAuth, addRegister, setIsSignIn, commonLogin } =
-  reducerSlice.actions;
+export const { setAuth, addRegister, setIsSignIn, commonLogin } = reducerSlice.actions;
 
 export default reducerSlice.reducer;

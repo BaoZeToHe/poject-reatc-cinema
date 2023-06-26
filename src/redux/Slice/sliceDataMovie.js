@@ -4,16 +4,18 @@ const initialState = {
   isAuth: false,
   isSignIn: true,
   data: [],
+  pagination : {}
 };
 export const moviesReducer = createSlice({
-  name: "dataEvents",
+  name: "dataMovies",
   initialState,
   reducers: {
     getMoviesRequest: () => {},
     getMoviesSuccess: (state, action) => {
       return {
         ...state,
-        data: action.payload,
+        data: action.payload.dataAPI,
+        pagination: action.payload.pagination
       };
     },
   },

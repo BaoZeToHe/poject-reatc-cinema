@@ -1,7 +1,6 @@
 import { styled } from "styled-components";
 
 export const BackGround = styled.div`
-  background-image: url("../imgMovieDetailsPulic/banner03.jpg");
   padding-top: 212px;
   padding-bottom: 112px;
   background-size: cover;
@@ -137,7 +136,7 @@ export const DivTicketBook = styled.div`
   margin: -5px;
   display: flex ;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   a{
     color: #ffffff;
     padding: 5px;
@@ -145,8 +144,8 @@ export const DivTicketBook = styled.div`
     background: #162f5f;
     position: relative;
     text-align: center;
-    -webkit-mask-image : url('./movie-seat.png');
-    mask-image: url('./movie-seat.png');
+    -webkit-mask-image : url("https://res.cloudinary.com/djuhqvlld/image/upload/v1686916388/movie-seat_fdhegg.png");
+    mask-image: url("https://res.cloudinary.com/djuhqvlld/image/upload/v1686916388/movie-seat_fdhegg.png");
     -webkit-mask-size : 100% 100%;
     mask-size: 100% 100%;
     -webkit-mask-repeat: no-repeat;

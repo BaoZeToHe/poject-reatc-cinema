@@ -10,6 +10,7 @@ import {
   SpanWordMovieGrid,
 } from "../cssMovieGrid";
 import { GlobalOutlined } from "@ant-design/icons";
+
 function PageSideGirdMovie() {
   return (
     <div>

@@ -31,6 +31,7 @@ function* loginUserSaga(action) {
   }
 }
 
+
 function* LoginSaga() {
   yield takeEvery(addRegister.type, register);
   yield takeEvery(commonLogin.type, loginUserSaga);

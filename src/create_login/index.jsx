@@ -1,7 +1,8 @@
-import { NavLink } from "react-router-dom";
-import Page_login from "./Page_login";
+import PageLogin from "./PageLogin.jsx";
 import bg_img from "./account-bg.jpg";
 import { CssLoginPage } from "./CssLogin";
+import Button from "../button/button";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min.js";
 
 function Login() {
   const css = {
@@ -13,13 +14,21 @@ function Login() {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-  }
+  };
   return (
-    <div className="page_login_create" style={css}>
+    <div className="PageLogin_create" style={css}>
+      <NavLink to="/" className= "absolute top-10 left-3">
+        <Button
+          content="Home Page"
+          backGround="-webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%)"
+        ></Button>
+      </NavLink>
       <CssLoginPage>
-        <Page_login></Page_login>
+        <PageLogin></PageLogin>
       </CssLoginPage>
+      
     </div>
-  )
+  );
 }
-export default Login
+
+export default Login;

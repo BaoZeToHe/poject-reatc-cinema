@@ -1,9 +1,9 @@
 import { NavLink, Route, Switch } from "react-router-dom";
-import Button from "../button/button";
 import App_login from "./from_login";
 import App_Sign_up from "./from_sign_up";
 import SocialNetwork from "./social_network/social_network";
-function Page_login() {
+
+function PageLogin() {
   const css = {
     maxWidth: 540,
     height: "auto",
@@ -53,4 +53,5 @@ function Page_login() {
     </div>
   );
 }
-export default Page_login;
+
+export default PageLogin;

@@ -102,6 +102,7 @@ export const InputSearchContentHomePage = styled.input`
   padding: 0;
   height: 45px;
   padding-right: 50px;
+  color : #dbe2fb;
 `;
 
 export const SelectInput = styled.div`

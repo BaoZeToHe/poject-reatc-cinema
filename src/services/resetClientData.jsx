@@ -8,7 +8,7 @@ const token = getLocalLogin();
 
 export default function restClientData(method, url, data = {}, params = {}) {
   return axios({
-    method,
+    method, 
     url: `${baseUrl}/${url}`,
     data,
     params,

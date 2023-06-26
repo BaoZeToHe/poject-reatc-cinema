@@ -1,9 +1,10 @@
 import DataMovieSaga from "./dataMovieSaga";
 import LoginSaga from "./loginSaga";
-import { fork, takeEvery } from "redux-saga/effects";
-import { combineReducers } from "@reduxjs/toolkit";
+import DataShowTime from "./dataShowtime";
+import { fork } from "redux-saga/effects";
 
 export function* mySaga() {
+  yield fork(DataShowTime);
   yield fork(LoginSaga);
   yield fork(DataMovieSaga);
 }

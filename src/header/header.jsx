@@ -38,7 +38,7 @@ const PageHeader = () => {
     },
     {
       label: (
-        <NavLink to="/movie-List">
+        <NavLink to="/movie-List/1">
           <TagANavbar href="#0">movies</TagANavbar>
         </NavLink>
       ),
@@ -62,7 +62,7 @@ const PageHeader = () => {
       label: (
         <div>
           {getLocalLogin() ? (
-            <NavLink to = "/">User</NavLink>
+            <NavLink to="/">User</NavLink>
           ) : (
             <NavLink to="/create">
               <ButtonComponent
